@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jmu.name/"/>
-  <updated>2018-06-14T03:21:27.490Z</updated>
+  <updated>2018-06-14T04:54:52.222Z</updated>
   <id>http://jmu.name/</id>
   
   <author>
@@ -21,9 +21,19 @@
     <link href="http://jmu.name/2018/06/14/http%E5%8D%8F%E8%AE%AE/"/>
     <id>http://jmu.name/2018/06/14/http协议/</id>
     <published>2018-06-14T02:49:01.000Z</published>
-    <updated>2018-06-14T03:21:27.490Z</updated>
+    <updated>2018-06-14T04:54:52.222Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><h3 id="http简介"><a href="#http简介" class="headerlink" title="http简介"></a>http简介</h3></li></ol><p>http（超文本传输协议）是一个基于<strong>请求与响应</strong>模式的、<strong>无状态</strong>的、<strong>应用层</strong>的协议</p><p><img src="D:\http.jpg" alt=""></p><ul><li><h3 id="url详解"><a href="#url详解" class="headerlink" title="url详解"></a>url详解</h3><p>百度搜索的一个url地址：<a href="https://www.baidu.com/s?name=value" target="_blank" rel="noopener">https://www.baidu.com/s?name=value</a></p><p>1.http/https:         协议类型</p><p>2.host：主机地址或域名</p><ul><li>​    –192.168.x.xx:8080      地址+端口号</li><li>​    –www.xxx.com             域名</li><li>​    –localhost8080            localhost是本机地址</li></ul><p>3.port:端口号              （默认端口是80可以省略）</p><p>4.path:                       请求的路径（host之后，问号？之前）</p><p>5.?  :                            问号是分割符号</p><p>6.参数：                      name=value</p><p>7.&amp;   ：                          多个参数用&amp;隔开     </p></li></ul><p>- </p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;h3 id=&quot;http简介&quot;&gt;&lt;a href=&quot;#http简介&quot; class=&quot;headerlink&quot; title=&quot;http简介&quot;&gt;&lt;/a&gt;http简介&lt;/h3&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;http（超文本传输协议）是一个基于&lt;strong&gt;请求与响应&lt;/
+      
     
     </summary>
     
