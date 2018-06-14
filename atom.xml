@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jmu.name/"/>
-  <updated>2018-06-14T12:24:43.699Z</updated>
+  <updated>2018-06-14T12:30:53.555Z</updated>
   <id>http://jmu.name/</id>
   
   <author>
@@ -21,18 +21,15 @@
     <link href="http://jmu.name/2018/06/14/http%E5%8D%8F%E8%AE%AE/"/>
     <id>http://jmu.name/2018/06/14/http协议/</id>
     <published>2018-06-14T02:49:01.000Z</published>
-    <updated>2018-06-14T12:24:43.699Z</updated>
+    <updated>2018-06-14T12:30:53.555Z</updated>
     
-    <content type="html"><![CDATA[<ol><li><h2 id="http简介"><a href="#http简介" class="headerlink" title="http简介"></a>http简介</h2></li></ol><p>http（超文本传输协议）是一个基于<strong>请求与响应</strong>模式的、<strong>无状态</strong>的、<strong>应用层</strong>的协议</p><p><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fsamnfvuvnj30fb051glp.jpg" alt=""></p><ol><li><h2 id="url详解"><a href="#url详解" class="headerlink" title="url详解"></a>url详解</h2></li></ol><p>百度搜索的一个url地址：<a href="https://www.baidu.com/s?name=value" target="_blank" rel="noopener">https://www.baidu.com/s?name=value</a></p><p>1.http/https:         协议类型</p><p>2.host：主机地址或域名</p><ul><li>–192.168.x.xx:8080      地址+端口号</li><li>–www.xxx.com             域名</li><li>–localhost8080            localhost是本机地址    </li></ul><p>3.port:端口号              （默认端口是80可以省略）</p><p>4.path:                       请求的路径（host之后，问号？之前）</p><p>5.?  :                            问号是分割符号</p><p>6.参数：                      name=value</p><p>7.&amp;   ：                          多个参数用&amp;隔开     </p><ol><li><h2 id="Get和Post（采用fiddler软件分析）"><a href="#Get和Post（采用fiddler软件分析）" class="headerlink" title="Get和Post（采用fiddler软件分析）"></a>Get和Post（采用fiddler软件分析）</h2><h4 id="Get没有请求body"><a href="#Get没有请求body" class="headerlink" title="Get没有请求body"></a>Get没有请求body</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fsaz286xmvj30fy08rdj7.jpg" alt=""></h4><h4 id="Post有请求body（当然请求body也可以为空）"><a href="#Post有请求body（当然请求body也可以为空）" class="headerlink" title="Post有请求body（当然请求body也可以为空）"></a>Post有请求body（当然请求body也可以为空）<img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fsaz286hcjj30ft0883z4.jpg" alt=""></h4></li><li><h2 id="其他请求方法"><a href="#其他请求方法" class="headerlink" title="其他请求方法"></a>其他请求方法</h2><p>根据HTTP标准，HTTP请求可以使用多种请求方法。</p><p>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。</p><p>HTTP1.1新增了五种请求方法：OPTIONS, PUT,  DELETE, TRACE 和 CONNECT 方法。</p><ul><li>GET 请求指定的页面信息，并返回实体主体。 </li><li>HEAD 类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头 </li><li>POST 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。 </li><li>PUT 从客户端向服务器传送的数据取代指定的文档的内容。 </li><li>DELETE 请求服务器删除指定的页面。 </li><li>CONNECT HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。 </li><li>OPTIONS 允许客户端查看服务器的性能。 </li><li>TRACE 回显服务器收到的请求，主要用于测试或诊断。</li></ul></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-http简介"><a href="#1-http简介" class="headerlink" title="1. http简介"></a>1. http简介</h2><p>http（超文本传输协议）是一个基于<strong>请求与响应</strong>模式的、<strong>无状态</strong>的、<strong>应用层</strong>的协议</p><p><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fsamnfvuvnj30fb051glp.jpg" alt=""></p><h2 id="2-url详解"><a href="#2-url详解" class="headerlink" title="2. url详解"></a>2. url详解</h2><p>百度搜索的一个url地址：<a href="https://www.baidu.com/s?name=value" target="_blank" rel="noopener">https://www.baidu.com/s?name=value</a></p><p>1.http/https:         协议类型</p><p>2.host：主机地址或域名</p><ul><li>–192.168.x.xx:8080      地址+端口号</li><li>–www.xxx.com             域名</li><li>–localhost8080            localhost是本机地址    </li></ul><p>3.port:端口号              （默认端口是80可以省略）</p><p>4.path:                       请求的路径（host之后，问号？之前）</p><p>5.?  :                            问号是分割符号</p><p>6.参数：                      name=value</p><p>7.&amp;   ：                          多个参数用&amp;隔开     </p><h2 id="3-Get和Post（采用fiddler软件分析）"><a href="#3-Get和Post（采用fiddler软件分析）" class="headerlink" title="3. Get和Post（采用fiddler软件分析）"></a>3. Get和Post（采用fiddler软件分析）</h2><h4 id="Get没有请求body"><a href="#Get没有请求body" class="headerlink" title="Get没有请求body"></a>Get没有请求body</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1fsaz286xmvj30fy08rdj7.jpg" alt=""></h4><h4 id="Post有请求body（当然请求body也可以为空）"><a href="#Post有请求body（当然请求body也可以为空）" class="headerlink" title="Post有请求body（当然请求body也可以为空）"></a>Post有请求body（当然请求body也可以为空）<img src="http://wx1.sinaimg.cn/mw690/0060lm7Tly1fsaz286hcjj30ft0883z4.jpg" alt=""></h4><h2 id="4-其他请求方法"><a href="#4-其他请求方法" class="headerlink" title="4. 其他请求方法"></a>4. 其他请求方法</h2><p>根据HTTP标准，HTTP请求可以使用多种请求方法。</p><p>HTTP1.0定义了三种请求方法： GET, POST 和 HEAD方法。</p><p>HTTP1.1新增了五种请求方法：OPTIONS, PUT,  DELETE, TRACE 和 CONNECT 方法。</p><ul><li>GET 请求指定的页面信息，并返回实体主体。 </li><li>HEAD 类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头 </li><li>POST 向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。 </li><li>PUT 从客户端向服务器传送的数据取代指定的文档的内容。 </li><li>DELETE 请求服务器删除指定的页面。 </li><li>CONNECT HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。 </li><li>OPTIONS 允许客户端查看服务器的性能。 </li><li>TRACE 回显服务器收到的请求，主要用于测试或诊断。</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;ol&gt;
-&lt;li&gt;&lt;h2 id=&quot;http简介&quot;&gt;&lt;a href=&quot;#http简介&quot; class=&quot;headerlink&quot; title=&quot;http简介&quot;&gt;&lt;/a&gt;http简介&lt;/h2&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;http（超文本传输协议）是一个基于&lt;strong&gt;请求与响应&lt;/
+        &lt;h2 id=&quot;1-http简介&quot;&gt;&lt;a href=&quot;#1-http简介&quot; class=&quot;headerlink&quot; title=&quot;1. http简介&quot;&gt;&lt;/a&gt;1. http简介&lt;/h2&gt;&lt;p&gt;http（超文本传输协议）是一个基于&lt;strong&gt;请求与响应&lt;/strong&gt;模式的、
       
     
     </summary>
